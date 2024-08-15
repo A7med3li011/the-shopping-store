@@ -57,7 +57,7 @@ export default function Payment() {
             headers: { token: localStorage.getItem("userToken") }
 
             , params: {
-                url: "https://a7med3li011.github.io/store"
+                url: "https://the-shopping-store.vercel.app/#/"
             }
         }
 
@@ -67,7 +67,7 @@ export default function Payment() {
                 window.open(res.data.session.url, "_slef")
                 getDataFromCart()
                 clearCart()
-                
+
             }
 
         }).catch((err) => {
